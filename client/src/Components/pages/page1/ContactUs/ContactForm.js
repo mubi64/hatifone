@@ -30,7 +30,7 @@ const ContactForm = () => {
             },
           })
           .then((res) => {
-            alert("Email Sent Successfully");
+            // alert("Email Sent Successfully");
             setLoading(false);
             console.log(res);
             window.location.reload();
