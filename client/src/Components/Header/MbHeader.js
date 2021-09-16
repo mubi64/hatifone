@@ -1,0 +1,372 @@
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+
+const MbHeader = () => {
+  const location = useLocation();
+  const [activeMenu, setActiveMenu] = useState(false);
+  const [aboutMenu, setAboutMenu] = useState(false);
+  const [serviceMenu, setServiceMenu] = useState(false);
+  const [newsMenu, setNewsMenu] = useState(false);
+  const [pagesMenu, setPagesMenu] = useState(false);
+  const [pages1, setPages1] = useState(false);
+  const [pages2, setPages2] = useState(false);
+  const [gallry, setGallry] = useState(false);
+  const [shop, setShop] = useState(false);
+  const [elementMenu, setElementMenu] = useState(false);
+  const [toggle, setToggle] = useState(false);
+  const [activeToggle, setActiveToggle] = useState(false);
+
+  useEffect(() => {
+    setActiveMenu(false);
+    setShop(false);
+    setPages1(false);
+    setPages2(false);
+    setGallry(false);
+    setPagesMenu(false);
+    setAboutMenu(false);
+    setServiceMenu(false);
+    setNewsMenu(false);
+    setElementMenu(false);
+    setToggle(false);
+    setActiveToggle(false);
+  }, [location]);
+
+  return (
+    <>
+      <header className="mdsection page-header">
+        <div className="rd-navbar-wrap" style={{ height: "0px" }}>
+          <nav
+            className="rd-navbar rd-navbar-creative rd-navbar-creative-2 rd-navbar--is-touch rd-navbar-original rd-navbar-fixed"
+            data-layout="rd-navbar-fixed"
+            data-sm-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-fixed"
+            data-md-device-layout="rd-navbar-fixed"
+            data-lg-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-fixed"
+            data-xl-layout="rd-navbar-static"
+            data-xl-device-layout="rd-navbar-static"
+            data-xxl-layout="rd-navbar-static"
+            data-xxl-device-layout="rd-navbar-static"
+            data-lg-stick-up-offset="50px"
+            data-xl-stick-up-offset="50px"
+            data-xxl-stick-up-offset="50px"
+            data-lg-stick-up="true"
+            data-xl-stick-up="true"
+            data-xxl-stick-up="true"
+            data-lg-auto-height="true"
+            data-xl-auto-height="true"
+            data-xxl-auto-height="true"
+          >
+            <div className="rd-navbar-main-outer">
+              <div className="rd-navbar-main">
+                <div className="rd-navbar-panel">
+                  <button
+                    onClick={() => setActiveMenu(!activeMenu)}
+                    className={`rd-navbar-toggle toggle-original ${
+                      activeMenu ? "active" : ""
+                    }`}
+                    data-rd-navbar-toggle=".rd-navbar-nav-wrap"
+                  >
+                    <span></span>
+                  </button>
+                  <div className="rd-navbar-brand">
+                    <Link className="brand" to="/">
+                      <img
+                        className="brand-logo-dark"
+                        src="images/Hatifone_L_Transparent.png"
+                        alt=""
+                        width="135"
+                        height="40"
+                      />
+                      <img
+                        className="brand-logo-light"
+                        src="images/Hatifone_L_Transparent.png"
+                        alt=""
+                        width="135"
+                        height="40"
+                      />
+                      <span className="brand-slogan">Call Center Solution</span>
+                    </Link>
+                  </div>
+                </div>
+                <div
+                  className={`rd-navbar-nav-wrap toggle-original-elements ${
+                    activeMenu ? "active" : ""
+                  }`}
+                >
+                  <ul className="rd-navbar-nav">
+                    <li className="rd-nav-item">
+                      <Link className="rd-nav-link" to="/">
+                        Home
+                      </Link>
+                    </li>
+                    <li
+                      // onClick={() => setAboutMenu(!aboutMenu)}
+                      // className={`rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu ${
+                      //   aboutMenu ? "opened" : ""
+                      // } `}
+                      className="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu "
+                    >
+                      <Link className="rd-nav-link" to="/about">
+                        About
+                      </Link>
+                      {/* <span className="rd-navbar-submenu-toggle"></span> */}
+                      {/* <ul
+                        className="rd-menu rd-navbar-dropdown rd-navbar-open-right"
+                        // style=""
+                      >
+                        <li className="rd-dropdown-item">
+                          <Link className="rd-dropdown-link" to="/team">
+                            Team
+                          </Link>
+                        </li>
+                        <li className="rd-dropdown-item">
+                          <Link className="rd-dropdown-link" to="/teamMember">
+                            Team member
+                          </Link>
+                        </li>
+                      </ul> */}
+                    </li>
+                    <li
+                      // // onClick={() => setServiceMenu(!serviceMenu)}
+                      // className={`rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu ${
+                      //   serviceMenu ? "opened" : ""
+                      // } `}
+                      className="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu"
+                    >
+                      <Link className="rd-nav-link" to="/services">
+                        Services
+                      </Link>
+                      {/* <span className="rd-navbar-submenu-toggle"></span> */}
+                      {/* <ul className="rd-menu rd-navbar-dropdown rd-navbar-open-right">
+                        <li className="rd-dropdown-item">
+                          <Link
+                            className="rd-dropdown-link"
+                            // style={{
+                            //     color: getColor("/singleServices"),
+                            //     textDecoration: gettrasition("/singleServices"),
+                            //   }}
+                            to="/singleServices"
+                          >
+                            Single service
+                          </Link>
+                        </li>
+                      </ul> */}
+                    </li>
+                    <li className="rd-nav-item">
+                      <Link className="rd-nav-link" to="/clients">
+                        Clients
+                      </Link>
+                    </li>
+                    <li className="rd-nav-item">
+                      <Link className="rd-nav-link" to="/contactus">
+                        Contact us
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="rd-navbar-elements">
+                  <div>
+                    <button
+                      onClick={() => setToggle(!toggle)}
+                      className={`sidebar-toggle sidebar-toggle-1 rd-navbar-fixed-element-2 ${
+                        toggle ? "active" : ""
+                      }`}
+                      data-multitoggle=".sidebar-wrap-2"
+                    >
+                      <span></span>
+                    </button>
+                  </div>
+                  {/* <div>
+                    <button
+                      onClick={() => setActiveToggle(!activeToggle)}
+                      className={`sidebar-toggle sidebar-toggle-1 rd-navbar-fixed-element-1 ${
+                        activeToggle ? "active" : ""
+                      }`}
+                      data-multitoggle=".sidebar-wrap-1"
+                    >
+                      <span></span>
+                    </button>
+                  </div> */}
+                  <div>
+                    <div className="contacts-default">
+                      <div className="contacts-default-text">
+                        Call Us for any question
+                      </div>
+                      <a href="tel:#">+1 (800) 123 1234</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              onClick={() => setToggle(!toggle)}
+              className={`sidebar-wrap sidebar-wrap-1 ${
+                toggle ? "active" : ""
+              }`}
+            >
+              <button
+                className={`sidebar-close ${toggle ? "active" : ""}`}
+                data-multitoggle=".sidebar-wrap-1 "
+                data-multitoggle-blur=".rd-navbar-wrap"
+                data-multitoggle-isolate=""
+              >
+                <span></span>
+              </button>
+              <div className="sidebar">
+                <h3 className="sidebar-title">Get in Touch</h3>
+                <img
+                  className="sidebar-image"
+                  src="images/header-01-380x214.jpg"
+                  alt=""
+                  width="380"
+                  height="214"
+                />
+                <ul className="contacts-creative">
+                  <li>
+                    <div className="unit unit-spacing-md">
+                      <div className="unit-left">
+                        <span className="icon mdi mdi-phone"></span>
+                      </div>
+                      <div className="unit-body">
+                        <a href="tel:#">+1 800 123 1234</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="unit unit-spacing-md">
+                      <div className="unit-left">
+                        <span className="icon mdi mdi-email-outline"></span>
+                      </div>
+                      <div className="unit-body">
+                        <a href="mailto:#">info@demolink.org</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="unit unit-spacing-md">
+                      <div className="unit-left">
+                        <span className="icon mdi mdi-map-marker"></span>
+                      </div>
+                      <div className="unit-body">
+                        <a href="/">
+                          2972 Westheimer Rd. Santa Ana, Illinois 85486
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="unit unit-spacing-md">
+                      <div className="unit-left">
+                        <span className="icon mdi mdi-clock"></span>
+                      </div>
+                      <div className="unit-body">
+                        <div className="text-600">
+                          Mon - Frid: 08:00am - 07:00pm
+                        </div>
+                        <div className="text-600">
+                          Sat - Sun: 10:00am - 05:00pm
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div className="sidebar-panel">
+                <ul className="list-social">
+                  <li>
+                    <Link className="icon mdi mdi-facebook" to="/"></Link>
+                  </li>
+                  <li>
+                    <Link className="icon mdi mdi-twitter" to="/"></Link>
+                  </li>
+                  <li>
+                    <Link className="icon mdi mdi-instagram" to="/"></Link>
+                  </li>
+                  <li>
+                    <Link className="icon mdi mdi-youtube-play" to="/"></Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            {/* <div
+              onClick={() => setToggle(!toggle)}
+              className={`sidebar-wrap sidebar-wrap-2 ${
+                toggle ? "active" : ""
+              }`}
+             >
+              <button
+                className={`sidebar-close ${toggle ? "active" : ""}`}
+                data-multitoggle=".sidebar-wrap-2"
+                data-multitoggle-blur=".rd-navbar-wrap"
+                data-multitoggle-isolate=""
+              >
+                <span></span>
+              </button>
+              <div className="sidebar">
+                <h3 className="sidebar-title">My Cart</h3>
+                <div className="product product-small navbar-product">
+                  <div className="product-media">
+                    <img
+                      className="product-img"
+                      src="images/header-02-100x100.jpg"
+                      alt=""
+                      width="100"
+                      height="100"
+                    />
+                  </div>
+                  <div className="product-body">
+                    <div className="product-title">
+                      <a className="link-dark" href="single-product.html">
+                        FixIT Laptop CPU Cooling Fan Replacement
+                      </a>
+                    </div>
+                    <div className="product-price h6 text-primary">$12.00</div>
+                  </div>
+                  <button className="product-remove icon linearicons-trash"></button>
+                </div>
+                <div className="product product-small navbar-product">
+                  <div className="product-media">
+                    <img
+                      className="product-img"
+                      src="images/header-03-100x100.jpg"
+                      alt=""
+                      width="100"
+                      height="100"
+                    />
+                  </div>
+                  <div className="product-body">
+                    <div className="product-title">
+                      <a className="link-dark" href="single-product.html">
+                        InVision SB220Q bi 21.5 Inches Full HD IPS Ultra-Thin
+                        Monitor
+                      </a>
+                    </div>
+                    <div className="product-price h6 text-primary">$12.00</div>
+                  </div>
+                  <button className="product-remove icon linearicons-trash"></button>
+                </div>
+              </div>
+              <div className="sidebar-footer">
+                <div className="sidebar-footer-price">
+                  <span>Subtotal: </span>
+                  <span className="text-primary fw-bold">$24.00</span>
+                </div>
+                <div className="sidebar-footer-btns">
+                  <a className="btn btn-primary btn-block" href="checkout.html">
+                    Checkout
+                  </a>
+                  <a className="btn btn-secondary btn-block" href="cart.html">
+                    View Cart
+                  </a>
+                </div>
+              </div>
+            </div> */}
+          </nav>
+        </div>
+      </header>
+    </>
+  );
+};
+
+export default MbHeader;
