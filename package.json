@@ -7,9 +7,10 @@
     "node": "12.18.3"
   },
   "scripts": {
+    "start": "node server/index.js",
     "server": "nodemon server/index.js",
-    "start": "cd client && npm install && npm run start",
-    "dev": "concurrently \"npm run server\" \"npm run start\""
+    "build": "cd client && npm install && npm run build",
+    "dev": "concurrently \"npm run server\" \"npm run build\""
   },
   "author": "saad",
   "license": "ISC",
