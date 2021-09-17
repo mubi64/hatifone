@@ -37,8 +37,8 @@ app.post("/mail", (req, res, next) => {
 
   const mailOptions = {
     from: name,
-    to: email,
-    subject: subject,
+    to: "mubashir@sowaan.com",
+    subject: "Hatifone - Contact Request from contact page",
     html: `
 
     <h3>Information</h3>
@@ -76,8 +76,8 @@ app.post("/api", (req, res, next) => {
 
   const mailOptions = {
     from: name,
-    to: email,
-    subject: phone,
+    to: "mubashir@sowaan.com",
+    subject: "Hatifone - Consultancy Request from home page",
     html: `
 
     <h3>Information</h3>

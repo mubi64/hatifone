@@ -126,8 +126,8 @@ const ContactForm = () => {
                   // data-form-output="form-output-global"
                   // data-form-type="contact"
                   // action="bat/rd-mailform.php"
-                  onSubmit={handleRequest}
-                  method="post"
+                  // onSubmit={handleRequest}
+                  // method="post"
                 >
                   <div className="form-wrap">
                     <div className="form-icon mdi mdi-account-outline"></div>
@@ -187,7 +187,7 @@ const ContactForm = () => {
                   <div className="form-button">
                     <button
                       className="btn btn-secondary btn-ujarak btn-block"
-                      type="submit"
+                      type="button"
                       disabled={loading}
                       onClick={handleRequest}
                     >

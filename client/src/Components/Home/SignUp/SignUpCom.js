@@ -74,8 +74,8 @@ const SignUpCom = (props) => {
                   // data-form-type="contact"
                   // method="post"
                   // action="bat/rd-mailform.php"
-                  onSubmit={handleRequest}
-                  method="post"
+                  // onSubmit={handleRequest}
+                  // method="post"
                 >
                   <div className="form-boxed-header">
                     <h3>Sign up for a Consultancy</h3>
@@ -128,7 +128,7 @@ const SignUpCom = (props) => {
                   <div className="form-button">
                     <button
                       className="btn btn-secondary btn-ujarak btn-block"
-                      type="submit"
+                      type="button"
                       disabled={loading}
                       onClick={handleRequest}
                     >
