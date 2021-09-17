@@ -96,13 +96,6 @@ const ContactForm = () => {
                       Karachi Pakistan
                     </a>
                   </li>
-                  {/* <li className="list-item">
-                  <div className="list-icon mdi mdi-clock"></div>
-                  <ul className="list-0 text-600">
-                    <li>Monday - Friday: 08:00am - 07:00pm</li>
-                    <li>Saturday - Sunday: 10:00am - 05:00pm</li>
-                  </ul>
-                </li> */}
                 </ul>
                 <div className="social">
                   <a
