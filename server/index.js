@@ -69,6 +69,44 @@ app.post("/mail", (req, res, next) => {
   });
 });
 
+app.post("/api", (req, res, next) => {
+  var email = req.body.email;
+  var subject = req.body.subject;
+  var name = req.body.name;
+
+  const mailOptions = {
+    from: name,
+    to: email,
+    subject: subject,
+    html: `
+
+    <h3>Information</h3>
+    <ul>
+    <li>Name:  ${name}</li>
+    <li>Email:  ${email}</li>
+    <li>Phone No:  ${subject}</li>
+    </ul>
+
+
+    `,
+    // ${name} from ${company} <noreply@${name}.com> <br /><br /> ${subject}
+  };
+
+  transporter.sendMail(mailOptions, (err, data) => {
+    if (err) {
+      res.json({
+        status: "err",
+      });
+      console.log(err);
+    } else {
+      res.json({
+        status: "success",
+      });
+      console.log("Email Sent" + data.response);
+    }
+  });
+});
+
 transporter.verify(function (error, success) {
   if (error) {
     console.log(error);

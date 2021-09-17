@@ -1,11 +1,28 @@
 import React from "react";
 import Counts from "../About/Counts";
-// import SignUpCom from "./SignUp/SignUpCom";
+import SignUpCom from "./SignUp/SignUpCom";
 
 const WhoAre = () => {
   return (
     <>
-      <section className="section section-lg bg-100">
+      <SignUpCom
+        className="section section-lg bg-transparent"
+        title="Who we are 
+        and How we Work"
+        pera="Hatifone provides software driven communication to some of the
+        leading brands in Pakistan and Middle East. Enabling seamless
+        customer experience, this powerful platform is the answer to all
+        your communication challenges. Hatifone enhances leads by a
+        significant percentage to increase campaign effectiveness, it
+        enables you to call back your customers who gave missed calls,
+        the call is processed via auto-dialer, connecting the target
+        audience with automated IVR messages and agents."
+        // agry="I agree to the"
+        // agrylink1=" Privacy Policy "
+        // and="and"
+        // agrylink2=" Terms of Service"
+      />
+      {/* <section className="section section-lg bg-100">
         <div className="container">
           <div className="row row-30 justify-content-xl-between">
             <div className="col-md-6 col-xl-5">
@@ -70,8 +87,8 @@ const WhoAre = () => {
                   >
                     Submit Request
                   </button>
-                </div>
-                {/* <div className="form-meta">
+                </div> */}
+      {/* <div className="form-meta">
                   <label className="checkbox">
                     <input type="checkbox" />
                     <span>By clicking the button you agree to the </span>
@@ -84,11 +101,11 @@ const WhoAre = () => {
                     </a>
                   </label>
                 </div> */}
-              </form>
+      {/* </form>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

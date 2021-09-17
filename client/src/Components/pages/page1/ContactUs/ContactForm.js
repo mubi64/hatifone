@@ -55,8 +55,8 @@ const ContactForm = () => {
       }
       setEmail("");
       setName("");
-      setSubject("");
       setCompany("");
+      setSubject("");
     };
     return (
       <>
