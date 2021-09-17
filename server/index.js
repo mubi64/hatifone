@@ -121,7 +121,7 @@ router.post("/signup-with-recaptcha", async (req, res, next) => {
   }
 
   try {
-    const googleVerifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=6LemmnEcAAAAAP1lN6V3Df2wUmJG0OrpKgZkTyeK&response=${req.body.token}`;
+    const googleVerifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=6LdhV3QcAAAAAOVnI8wyFgFaEok0jaSX2C7_Wf8V&response=${req.body.token}`;
     const response = await axios.post(googleVerifyUrl);
     const { success } = response.data;
     if (success) {
