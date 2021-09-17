@@ -8,7 +8,7 @@ const SignUpCom = (props) => {
   const HomeForm = () => {
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
-    const [subject, setSubject] = useState("");
+    const [phone, setPhone] = useState("");
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
     const [token, setToken] = useState("");
@@ -21,15 +21,15 @@ const SignUpCom = (props) => {
       }
 
       setError("");
-      if (email && name && subject !== "") {
+      if (email && name && phone !== "") {
         e.preventDefault();
         setLoading(true);
-        console.log({ email, name, subject });
+        console.log({ email, name, phone });
 
         const body = {
           name,
           email,
-          subject,
+          phone,
         };
 
         await axios
@@ -53,7 +53,7 @@ const SignUpCom = (props) => {
       }
       setEmail("");
       setName("");
-      setSubject("");
+      setPhone("");
     };
     return (
       <>
@@ -106,14 +106,14 @@ const SignUpCom = (props) => {
                     />
                   </div>
                   <div className="form-wrap">
-                    <div className="form-icon mdi mdi-subject"></div>
+                    <div className="form-icon mdi mdi-phone"></div>
                     <input
                       className="form-input"
                       id="company"
-                      value={subject}
-                      onChange={(e) => setSubject(e.target.value)}
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
                       type="number"
-                      placeholder="Your subject"
+                      placeholder="Your phone"
                     />
                   </div>
                   <div className="form-meta">

@@ -71,20 +71,20 @@ app.post("/mail", (req, res, next) => {
 
 app.post("/api", (req, res, next) => {
   var email = req.body.email;
-  var subject = req.body.subject;
+  var phone = req.body.phone;
   var name = req.body.name;
 
   const mailOptions = {
     from: name,
     to: email,
-    subject: subject,
+    subject: phone,
     html: `
 
     <h3>Information</h3>
     <ul>
     <li>Name:  ${name}</li>
     <li>Email:  ${email}</li>
-    <li>Phone No:  ${subject}</li>
+    <li>Phone No:  ${phone}</li>
     </ul>
 
 
