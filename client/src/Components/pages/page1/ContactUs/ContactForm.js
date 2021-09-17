@@ -44,7 +44,7 @@ const ContactForm = () => {
             // alert("Email Sent Successfully");
             setLoading(false);
             console.log(res);
-            window.location.reload();
+            // window.location.reload();
           })
           .catch((err) => {
             console.log(err);
@@ -53,8 +53,11 @@ const ContactForm = () => {
       } else {
         alert("Please fill all required filled");
       }
+      setEmail("");
+      setName("");
+      setSubject("");
+      setCompany("");
     };
-
     return (
       <>
         <section className="section section-lg bg-transparent">
