@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import Page1Header from "../Page1Header";
 import ContactForm from "./ContactForm";
+import {Link} from "react-router-dom"
 
 const ContactUs = () => {
   useEffect(() => {
@@ -9,10 +9,14 @@ const ContactUs = () => {
 
   return (
     <>
-      <Page1Header
-        active="Contact us"
-        className="section breadcrumbs-custom bg-transparent"
-      />
+     <section class="section breadcrumbs-custom bg-transparent">
+        <div class="container">
+          <ul class="breadcrumbs-custom-path text-caption">
+            <li><Link to="/">Home</Link></li>
+            <li class="active">Contact us</li>
+          </ul>
+        </div>
+      </section>
       <ContactForm />
     </>
   );

@@ -1,4 +1,5 @@
 const creds = require("./nodemon.json");
+const axios = require("axios");
 
 let express = require("express");
 let app = express();
@@ -73,6 +74,26 @@ transporter.verify(function (error, success) {
     console.log(error);
   } else {
     console.log("Server is ready to take our messages!");
+  }
+});
+
+router.post("/signup-with-recaptcha", async (req, res, next) => {
+  if (!req.body.token) {
+    return res.status(400).json({ error: "reCaptcha token is missing" });
+  }
+
+  try {
+    const googleVerifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=6LemmnEcAAAAAP1lN6V3Df2wUmJG0OrpKgZkTyeK&response=${req.body.token}`;
+    const response = await axios.post(googleVerifyUrl);
+    const { success } = response.data;
+    if (success) {
+      //Do sign up and store user in database
+      return res.json({ success: true });
+    } else {
+      return res.status(400).json({ error: "Invalid Captcha. Try again." });
+    }
+  } catch (e) {
+    return res.status(400).json({ error: "reCaptcha error." });
   }
 });
 

@@ -420,7 +420,7 @@ p + img {
 
 @media (min-width: 1200px) {
   .offset-custom {
-    margin-top: 65px;
+    margin-top: 30px;
   }
 }
 
@@ -827,7 +827,7 @@ html [class*="section-"].section-bottom-0 {
 
 @media (min-width: 1200px) {
   .section-lg {
-    padding: 147px 0;
+    padding: 100px 0;
   }
 }
 
@@ -4569,7 +4569,7 @@ h4 + .rd-form-inline {
 
 @media (min-width: 992px) {
   .breadcrumbs-custom {
-    padding: 31px 0 119px;
+    padding: 31px 0 30px;
   }
   .breadcrumbs-custom-1 {
     padding: 31px 0 105px;

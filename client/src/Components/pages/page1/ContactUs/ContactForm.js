@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import axios from "axios";
 import GoogleMap from "./GoogleMap";
+import ReCAPTCHA from "react-google-recaptcha";
+import AppConfig from "../../../../App.config";
 
 const ContactForm = () => {
   const Form = () => {
@@ -9,8 +11,17 @@ const ContactForm = () => {
     const [subject, setSubject] = useState("");
     const [company, setCompany] = useState("");
     const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("");
+    const [token, setToken] = useState("");
+    const reCaptcha = useRef();
 
     const handleRequest = async (e) => {
+      if (!token) {
+        setError("You must verify the captcha");
+        return;
+      }
+
+      setError("");
       if (email && company && name && subject !== "") {
         e.preventDefault();
         setLoading(true);
@@ -168,6 +179,15 @@ const ContactForm = () => {
                       placeholder="Your message"
                     ></textarea>
                   </div>
+                  <div className="form-meta">
+                    <ReCAPTCHA
+                      ref={reCaptcha}
+                      sitekey={AppConfig.GOOGLE.reCaptcha}
+                      onChange={(token) => setToken(token)}
+                      onErrored={(e) => setToken("")}
+                    />
+                  </div>
+                  {error && <p className="text-danger">{error}</p>}
                   <div className="form-button">
                     <button
                       className="btn btn-secondary btn-ujarak btn-block"
