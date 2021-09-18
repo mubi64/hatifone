@@ -112,7 +112,7 @@ const SignUpCom = (props) => {
                       id="company"
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
-                      type="number"
+                      type="phone"
                       placeholder="Your phone"
                     />
                   </div>

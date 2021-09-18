@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 export default function Banner() {
@@ -45,14 +45,14 @@ export default function Banner() {
                       A asterisk based "Digital PBX Solution" which comes with
                       software or software+agent, both.
                     </p>
-                    <a
+                    <Link
                       className="btn btn-secondary btn-ujarak"
-                      href="/services"
+                      to="/services"
                       data-caption-animate="fadeInUp"
                       data-caption-delay="450"
                     >
                       View All Services
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

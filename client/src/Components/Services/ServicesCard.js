@@ -16,7 +16,7 @@ const ServicesCard = (props) => {
           </div>
           <div className="thumbnail-body">
             <div className="thumbnail-title h4">
-              <a href="/singleServices">{props.title}</a>
+              <a href="#">{props.title}</a>
             </div>
             <div className="thumbnail-text">{props.pera}</div>
             <div className="thumbnail-price">{props.price}</div>
