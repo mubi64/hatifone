@@ -1,139 +1,37 @@
-const ClientApi = [
-  {
-    id: 1,
-    image: "images/clients/bma.png",
-    styles: { padding: "30px 0px"},
-  },
-  {
-    id: 2,
-    image: "images/clients/ary.jpg",
-    styles: { padding: "26px 0px" },
-  },
-  {
-    id: 3,
-    image: "images/clients/attock.jpg",
-    styles: { padding: "8px 0px" },
-  },
-  {
-    id: 4,
-    image: "images/clients/pizza.jpg",
-    styles: { height: "85%" },
-  },
-  {
-    id: 5,
-    image: "images/clients/arysa.png",
-    styles: { height: "85%" },
-  },
-  {
-    id: 6,
-    image: "images/clients/bpizza.png",
-    styles: { padding: "8px 0px" },
-  },
-  {
-    id: 7,
-    image: "images/clients/king.png",
-    styles: { padding: "0px 0px" },
-  },
-  {
-    id: 8,
-    image: "images/clients/clucky.jpg",
-    styles: { height: "95%" },
-  },
-  {
-    id: 9,
-    image: "images/clients/cpizza.png",
-    styles: { height: "95%" },
-  },
-  {
-    id: 10,
-    image: "images/clients/back.png",
-    styles: { padding: "16px 0px" },
-  },
-  {
-    id: 11,
-    image: "images/clients/Kbrost.jpg",
-    styles: { height: "95%" },
-  },
-  {
-    id: 12,
-    image: "images/clients/jaldi.png",
-    styles: {},
-  },
-  {
-    id: 13,
-    image: "images/clients/food.jpg",
-    styles: {},
-  },
-  {
-    id: 14,
-    image: "images/clients/Dvago.png",
-    styles: {},
-  },
-  {
-    id: 15,
-    image: "images/clients/go.png",
-    styles: { padding: "40px 0px" },
-  },
-  {
-    id: 16,
-    image: "images/clients/kay.jpg",
-    styles: {},
-  },
-  {
-    id: 17,
-    image: "images/clients/pizzac.jpg",
-    styles: {},
-  },
-  {
-    id: 18,
-    image: "images/clients/pizzahut.png",
-    styles: { padding: "16px 0px" },
-  },
-  {
-    id: 19,
-    image: "images/clients/max.png",
-    styles: {},
-  },
-  {
-    id: 20,
-    image: "images/clients/lal.png",
-    styles: { padding: "60px 0px" },
-  },
-  {
-    id: 21,
-    image: "images/clients/un.png",
-    styles: { padding: "34px 0px" },
-  },
-  {
-    id: 22,
-    image: "images/clients/sab.png",
-    styles: { padding: "32px 0px" },
-  },
-  {
-    id: 23,
-    image: "images/clients/pizzamax.png",
-    styles: { padding: "60px 0px" },
-  },
-  {
-    id: 24,
-    image: "images/clients/pizzapoint.png",
-    styles: { height: "95%" },
-  },
-  {
-    id: 25,
-    image: "images/clients/si.png",
-    styles: { padding: "32px 0px" },
-  },
-  {
-    id: 26,
-    image: "images/clients/V.png",
-    styles: { height: "95%" },
-  },
-  {
-    id: 27,
-    image: "images/clients/wa.png",
-    styles: { padding: "32px 0px" },
-  },
-];
+import PropsCom from "./PropsCom";
 
-export default ClientApi;
+const ClientsApi = () => {
+  return (
+    <>
+      <PropsCom img="images/clients/bma.png" styles="30px 0px" />
+      <PropsCom img="images/clients/ary.jpg" styles="26px 0px" />
+      <PropsCom img="images/clients/attock.jpg" styles="8px 0px" />
+      <PropsCom img="images/clients/pizza.jpg" styles="8px 20px" />
+      <PropsCom img="images/clients/arysa.png" styles="8px 18px" />
+      <PropsCom img="images/clients/bpizza.png" styles="10px 0px" />
+      <PropsCom img="images/clients/king.png" styles="0px 0px" />
+      <PropsCom img="images/clients/clucky.jpg" styles="16px 22px" />
+      <PropsCom img="images/clients/cpizza.png" styles="16px 22px" />
+      <PropsCom img="images/clients/back.png" styles="16px 0px" />
+      <PropsCom img="images/clients/Kbrost.jpg" styles="16px 22px" />
+      <PropsCom img="images/clients/jaldi.png" />
+      <PropsCom img="images/clients/food.jpg" />
+      <PropsCom img="images/clients/Dvago.png" />
+      <PropsCom img="images/clients/go.png" styles="40px 0px" />
+      <PropsCom img="images/clients/kay.jpg" />
+      <PropsCom img="images/clients/pizzac.jpg" />
+      <PropsCom img="images/clients/pizzahut.png" styles="18px 0px" />
+      <PropsCom img="images/clients/max.png" />
+      <PropsCom img="images/clients/lal.png" styles="60px 0px" />
+      <PropsCom img="images/clients/un.png" styles="34px 0px" />
+      <PropsCom img="images/clients/sab.png" styles="34px 0px" />
+      <PropsCom img="images/clients/pizzamax.png" styles="60px 0px" />
+      <PropsCom img="images/clients/pizzapoint.png" styles="18px 24px" />
+      <PropsCom img="images/clients/si.png" styles="32px 0px" />
+      <PropsCom img="images/clients/V.png" styles="20px 24px" />
+      <PropsCom img="images/clients/wa.png" styles="34px 0px" />
+    </>
+  );
+};
+
+export default ClientsApi;
