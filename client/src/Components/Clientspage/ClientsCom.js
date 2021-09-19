@@ -15,7 +15,7 @@ const ClientsCom = () => {
               Below are some of our clients
             </span>
           </p>
-          <div className="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-6 gallery ">
+          <div className="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-6 gallery">
             <ClientsApi />
           </div>
         </div>

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Page1Header from "../pages/page1/Page1Header";
 import ClientsCom from "./ClientsCom";
 
-const Clients = () => {
+const Clientspage = () => {
   useEffect(() => {
     document.title = "Client";
   }, []);
@@ -18,4 +18,4 @@ const Clients = () => {
   );
 };
 
-export default Clients;
+export default Clientspage;

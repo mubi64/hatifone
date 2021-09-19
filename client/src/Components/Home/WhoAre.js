@@ -1,5 +1,5 @@
 import React from "react";
-import Counts from "../About/Counts";
+// import Counts from "../About/Counts";
 import SignUpCom from "./SignUp/SignUpCom";
 
 const WhoAre = () => {
