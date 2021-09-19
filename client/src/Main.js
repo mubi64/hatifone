@@ -35,7 +35,7 @@ import ContactUs from "./Components/pages/page1/ContactUs";
 
 // Top Loading Bar
 import LoadingBar from "react-top-loading-bar";
-import Clients from "./Components/Clientspage";
+import Clientspage from "./Components/Clientspage";
 import ScrollToTop from "./Components/ScrollToTop";
 
 function Main() {
@@ -137,7 +137,7 @@ function Main() {
             <ContactUs setProgress={setProgress} />
           </Route>
           <Route path="/clients">
-            <Clients setProgress={setProgress} />
+            <Clientspage setProgress={setProgress} />
           </Route>
           <Route path="*">
             <NotFount setProgress={setProgress} />
