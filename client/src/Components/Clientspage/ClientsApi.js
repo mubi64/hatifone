@@ -5,7 +5,7 @@ const ClientsApi = () => {
     <>
       <PropsCom images="images/bma.png" styles="30px 0px" />
       <PropsCom images="images/ary.jpg" styles="26px 0px" />
-      <PropsCom images="images/attock.jpg" styles="8px 0px" />
+      <PropsCom images="images/Attock.jpg" styles="8px 0px" />
       <PropsCom images="images/pizza.jpg" styles="8px 20px" />
       <PropsCom images="images/arysa.png" styles="8px 18px" />
       <PropsCom images="images/bpizza.png" styles="10px 0px" />
@@ -22,13 +22,13 @@ const ClientsApi = () => {
       <PropsCom images="images/pizzac.jpg" />
       <PropsCom images="images/pizzahut.png" styles="18px 0px" />
       <PropsCom images="images/max.png" />
-      <PropsCom images="images/lal.png" styles="60px 0px" />
+      <PropsCom images="images/Lal.png" styles="60px 0px" />
       <PropsCom images="images/un.png" styles="34px 0px" />
       <PropsCom images="images/sab.png" styles="34px 0px" />
       <PropsCom images="images/pizzamax.png" styles="60px 0px" />
       <PropsCom images="images/pizzapoint.png" styles="18px 24px" />
       <PropsCom images="images/si.png" styles="32px 0px" />
-      <PropsCom images="images/V.png" styles="20px 24px" />
+      <PropsCom images="images/v.png" styles="20px 24px" />
       <PropsCom images="images/wa.png" styles="34px 0px" />
     </>
   );
