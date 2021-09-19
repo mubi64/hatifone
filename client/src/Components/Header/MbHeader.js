@@ -4,17 +4,17 @@ import { Link, useLocation } from "react-router-dom";
 const MbHeader = () => {
   const location = useLocation();
   const [activeMenu, setActiveMenu] = useState(false);
-  const [aboutMenu, setAboutMenu] = useState(false);
-  const [serviceMenu, setServiceMenu] = useState(false);
-  const [newsMenu, setNewsMenu] = useState(false);
-  const [pagesMenu, setPagesMenu] = useState(false);
-  const [pages1, setPages1] = useState(false);
-  const [pages2, setPages2] = useState(false);
-  const [gallry, setGallry] = useState(false);
-  const [shop, setShop] = useState(false);
-  const [elementMenu, setElementMenu] = useState(false);
+  const [, setAboutMenu] = useState(false); // aboutMenu
+  const [, setServiceMenu] = useState(false); // serviceMenu
+  const [, setNewsMenu] = useState(false); // newsMenu
+  const [, setPagesMenu] = useState(false); // pagesMenu
+  const [, setPages1] = useState(false); // pages1
+  const [, setPages2] = useState(false); // pages2
+  const [, setGallry] = useState(false); // gallry
+  const [, setShop] = useState(false); // shop
+  const [, setElementMenu] = useState(false); // elementMenu
   const [toggle, setToggle] = useState(false);
-  const [activeToggle, setActiveToggle] = useState(false);
+  const [, setActiveToggle] = useState(false); // activeToggle
 
   useEffect(() => {
     setActiveMenu(false);

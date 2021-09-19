@@ -35,7 +35,7 @@ import ContactUs from "./Components/pages/page1/ContactUs";
 
 // Top Loading Bar
 import LoadingBar from "react-top-loading-bar";
-import Clients from "./Components/Clients";
+import Clients from "./Components/Clientspage";
 import ScrollToTop from "./Components/ScrollToTop";
 
 function Main() {

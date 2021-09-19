@@ -4,27 +4,14 @@ import WeOffer from "./WeOffer";
 import WhoAre from "./WhoAre";
 import Gallery from "./Gallery";
 import ChooseUs from "./ChooseUs";
-import Package from "../Package";
-import Team from "./Team";
+// import Package from "../Package";
+// import Team from "./Team";
 import SignUp from "./SignUp";
-import LatesNews from "./LatesNews";
+// import LatesNews from "./LatesNews";
 
 const Home = (props) => {
-  const LoadingBar = () => {
-    props.setProgress(10);
-    <Banner />;
-    props.setProgress(30);
-    <WhoAre />;
-    props.setProgress(50);
-    <WeOffer />;
-    props.setProgress(70);
-    <Team />;
-    props.setProgress(100);
-  };
-
   useEffect(() => {
     document.title = "Home";
-    LoadingBar();
   }, []);
   return (
     <>
