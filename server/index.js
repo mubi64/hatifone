@@ -43,7 +43,6 @@ app.post("/mail", (req, res, next) => {
     to: mailList,
     subject: "Hatifone - Contact Request from contact page",
     html: `
-
     <h3>Information</h3>
     <ul>
     <li>Name:  ${name}</li>
@@ -52,7 +51,6 @@ app.post("/mail", (req, res, next) => {
     </ul>
     <h3>Message</h3>
     <p>${subject}</p>
-
     `,
     // ${name} from ${company} <noreply@${name}.com> <br /><br /> ${subject}
   };
@@ -85,15 +83,12 @@ app.post("/api", (req, res, next) => {
     to: mailList,
     subject: "Hatifone - Consultancy Request from home page",
     html: `
-
     <h3>Information</h3>
     <ul>
     <li>Name:  ${name}</li>
     <li>Email:  ${email}</li>
     <li>Phone No:  ${phone}</li>
     </ul>
-
-
     `,
     // ${name} from ${company} <noreply@${name}.com> <br /><br /> ${subject}
   };

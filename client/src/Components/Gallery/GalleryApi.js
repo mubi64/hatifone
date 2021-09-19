@@ -1,39 +1,39 @@
-const GalleryApi = [
+const gallryyApi = [
   {
     id: 1,
-    link: "images/home-06-471x340.jpg",
-    image: "images/home-06-471x340.jpg",
+    link: "images/gallry/1g.jpg",
+    image: "images/gallry/1g.jpg",
   },
   {
     id: 2,
-    link: "images/home-07-471x340.jpg",
-    image: "images/home-07-471x340.jpg",
+    link: "images/gallry/2g.jpg",
+    image: "images/gallry/2g.jpg",
   },
   {
     id: 3,
-    link: "images/home-08-471x340.jpg",
-    image: "images/home-08-471x340.jpg",
+    link: "images/gallry/3g.jpg",
+    image: "images/gallry/3g.jpg",
   },
   {
     id: 4,
-    link: "images/home-09-471x340.jpg",
-    image: "images/home-09-471x340.jpg",
+    link: "images/gallry/4g.jpg",
+    image: "images/gallry/4g.jpg",
   },
   {
     id: 5,
-    link: "images/home-10-471x340.jpg",
-    image: "images/home-10-471x340.jpg",
+    link: "images/gallry/5g.jpg",
+    image: "images/gallry/5g.jpg",
   },
   {
     id: 6,
-    link: "images/home-11-471x340.jpg",
-    image: "images/home-11-471x340.jpg",
+    link: "images/gallry/6g.jpg",
+    image: "images/gallry/6g.jpg",
   },
   {
     id: 7,
-    link: "images/home-12-471x340.jpg",
-    image: "images/home-12-471x340.jpg",
+    link: "images/gallry/7g.jpg",
+    image: "images/gallry/7g.jpg",
   },
 ];
 
-export default GalleryApi;
+export default gallryyApi;

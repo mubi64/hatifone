@@ -1,6 +1,6 @@
-import React from "react";
+import ClientsApi from "./ClientsApi";
 
-const ClientsCom = ({ img }) => {
+const ClientsCom = () => {
   return (
     <>
       <section className="section section-lg bg-transparent text-center">
@@ -16,15 +16,7 @@ const ClientsCom = ({ img }) => {
             </span>
           </p>
           <div className="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-6 gallery ">
-            {img.map((currE) => {
-              return (
-                <>
-                  <div className="col" key={currE.id}>
-                    <img src={currE.image} alt="img" style={currE.styles} />
-                  </div>
-                </>
-              );
-            })}
+            <ClientsApi />
           </div>
         </div>
       </section>

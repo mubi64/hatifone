@@ -160,7 +160,7 @@ const ContactForm = () => {
                       id="company"
                       value={company}
                       onChange={(e) => setCompany(e.target.value)}
-                      type="number"
+                      type="phone"
                       placeholder="Your phone"
                     />
                   </div>
