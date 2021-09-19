@@ -29,7 +29,7 @@ function Header({ history }) {
   };
 
   useEffect(() => {
-    setElements(false);
+    // setElements(false);
     setGallryDropdown(false);
     setShopDropdown(false);
     setP2Dropdown(false);
