@@ -37,8 +37,8 @@ const GalleryCard = ({ galleryData }) => {
             <blockquote className="quote quote-1">
               <div className="icon quote-icon mdi mdi-format-quote"></div>
               <q className="quote-text lead">
-                The quality of work offered by Fixoria was excellent. I would
-                highly recommend them.
+                The quality of work offered by Hatifone was excellent. I would
+                highly recommend this.
               </q>
               <cite className="quote-cite text-caption">
                 - Virginia Turner, Client

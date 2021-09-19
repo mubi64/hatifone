@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 let transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
+  host: "email-smtp.us-east-1.amazonaws.com",
   port: 587,
   secure: false,
   // service: 'Gmail',
@@ -35,9 +35,12 @@ app.post("/mail", (req, res, next) => {
   var name = req.body.name;
   var company = req.body.company;
 
+  const mailList = ["mubashir@sowaan.com","usman@sowaan.com","salman@sowaan.com"];
+  let fromAddress = name+" <support@sowaan.com>";
+
   const mailOptions = {
-    from: name,
-    to: "mubashir@sowaan.com",
+    from: fromAddress,
+    to: mailList,
     subject: "Hatifone - Contact Request from contact page",
     html: `
 
@@ -74,9 +77,12 @@ app.post("/api", (req, res, next) => {
   var phone = req.body.phone;
   var name = req.body.name;
 
+  const mailList = ["mubashir@sowaan.com","usman@sowaan.com","salman@sowaan.com"]
+  let fromAddress = name+" <support@sowaan.com>";
+
   const mailOptions = {
-    from: name,
-    to: "mubashir@sowaan.com",
+    from: fromAddress,
+    to: mailList,
     subject: "Hatifone - Consultancy Request from home page",
     html: `
 
