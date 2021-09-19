@@ -212,7 +212,7 @@ const ContactForm = () => {
             </div>
           </div>
         </section>
-        <GoogleMap />
+        {/* <GoogleMap /> */}
       </>
     );
   };
