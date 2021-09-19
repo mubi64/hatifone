@@ -33,7 +33,7 @@ const GalleryCard = ({ galleryData }) => {
               </div>
             );
           })}
-          <div className="col-xs-12 col-sm-6 col-md-4 col-xl-3 d-flex">
+          <div className="col-xs-12 col-sm-6 col-md-4 col-xl-3">
             <blockquote className="quote quote-1">
               <div className="icon quote-icon mdi mdi-format-quote"></div>
               <q className="quote-text lead">
