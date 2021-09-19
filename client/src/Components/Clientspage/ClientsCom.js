@@ -17,9 +17,6 @@ const ClientsCom = () => {
           </p>
           <div className="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-6 gallery">
             <ClientsApi />
-            {/* <div className="col">
-              <img src="images/clientsimg/bma.png" alt="img" />
-            </div> */}
           </div>
         </div>
       </section>
