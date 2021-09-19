@@ -4,18 +4,18 @@ import MbHeader from "./MbHeader";
 
 function Header({ history }) {
   const location = useLocation();
-  const [elements, setElements] = useState(false);
-  const [gallrydropdown, setGallryDropdown] = useState(false);
-  const [shopdropdown, setShopDropdown] = useState(false);
-  const [p2dropdown, setP2Dropdown] = useState(false);
-  const [p1dropdown, setP1Dropdown] = useState(false);
-  const [pdropdown, setPDropdown] = useState(false);
-  const [ndropdown, setNDropdown] = useState(false);
+  const [, setElements] = useState(false); // elements
+  const [, setGallryDropdown] = useState(false); // gallrydropdown
+  const [, setShopDropdown] = useState(false); // shopdropdown
+  const [, setP2Dropdown] = useState(false); // p2dropdown
+  const [, setP1Dropdown] = useState(false); // p1dropdown
+  const [, setPDropdown] = useState(false); // pdropdown
+  const [, setNDropdown] = useState(false); // ndropdown
   const [sdropdown, setSDropdown] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [scroll, setScroll] = useState(false);
   const [toggle, setToggle] = useState(false);
-  const [activeToggle, setActiveToggle] = useState(false);
+  const [, setActiveToggle] = useState(false); // activeToggle
 
   const getColor = (curr) => {
     if (history.location.pathname === curr) {
@@ -29,7 +29,7 @@ function Header({ history }) {
   };
 
   useEffect(() => {
-    // setElements(false);
+    setElements(false);
     setGallryDropdown(false);
     setShopDropdown(false);
     setP2Dropdown(false);
@@ -80,104 +80,104 @@ function Header({ history }) {
       setSDropdown(false);
     }
   };
-  const onNewsEnter = () => {
-    if (window.innerWidth < 980) {
-      setNDropdown(false);
-    } else {
-      setNDropdown(true);
-    }
-  };
-  const onNewsLeave = () => {
-    if (window.innerWidth < 980) {
-      setNDropdown(false);
-    } else {
-      setNDropdown(false);
-    }
-  };
-  const onPageEnter = () => {
-    if (window.innerWidth < 980) {
-      setPDropdown(false);
-    } else {
-      setPDropdown(true);
-    }
-  };
-  const onPageLeave = () => {
-    if (window.innerWidth < 980) {
-      setPDropdown(false);
-    } else {
-      setPDropdown(false);
-    }
-  };
-  const onShopEnter = () => {
-    if (window.innerWidth < 980) {
-      setShopDropdown(false);
-    } else {
-      setShopDropdown(true);
-    }
-  };
-  const onShopLeave = () => {
-    if (window.innerWidth < 980) {
-      setShopDropdown(false);
-    } else {
-      setShopDropdown(false);
-    }
-  };
-  const onP1Enter = () => {
-    if (window.innerWidth < 980) {
-      setP1Dropdown(false);
-    } else {
-      setP1Dropdown(true);
-    }
-  };
-  const onP1Leave = () => {
-    if (window.innerWidth < 980) {
-      setP1Dropdown(false);
-    } else {
-      setP1Dropdown(false);
-    }
-  };
-  const onP2Enter = () => {
-    if (window.innerWidth < 980) {
-      setP2Dropdown(false);
-    } else {
-      setP2Dropdown(true);
-    }
-  };
-  const onP2Leave = () => {
-    if (window.innerWidth < 980) {
-      setP2Dropdown(false);
-    } else {
-      setP2Dropdown(false);
-    }
-  };
-  const onGEnter = () => {
-    if (window.innerWidth < 980) {
-      setGallryDropdown(false);
-    } else {
-      setGallryDropdown(true);
-    }
-  };
-  const onGLeave = () => {
-    if (window.innerWidth < 980) {
-      setGallryDropdown(false);
-    } else {
-      setGallryDropdown(false);
-    }
-  };
-  const onElementEnter = () => {
-    if (window.innerWidth < 980) {
-      setElements(false);
-    } else {
-      setElements(true);
-    }
-  };
-  const onElementLeave = () => {
-    if (window.innerWidth < 980) {
-      setElements(false);
-    } else {
-      setElements(false);
-    }
-  };
+  // const onNewsEnter = () => {
+  //   if (window.innerWidth < 980) {
+  //     setNDropdown(false);
+  //   } else {
+  //     setNDropdown(true);
+  //   }
+  // };
+  // const onNewsLeave = () => {
+  //   if (window.innerWidth < 980) {
+  //     setNDropdown(false);
+  //   } else {
+  //     setNDropdown(false);
+  //   }
+  // };
+  // const onPageEnter = () => {
+  //   if (window.innerWidth < 980) {
+  //     setPDropdown(false);
+  //   } else {
+  //     setPDropdown(true);
+  //   }
+  // };
+  // const onPageLeave = () => {
+  //   if (window.innerWidth < 980) {
+  //     setPDropdown(false);
+  //   } else {
+  //     setPDropdown(false);
+  //   }
+  // };
+  // const onShopEnter = () => {
+  //   if (window.innerWidth < 980) {
+  //     setShopDropdown(false);
+  //   } else {
+  //     setShopDropdown(true);
+  //   }
+  // };
+  // const onShopLeave = () => {
+  //   if (window.innerWidth < 980) {
+  //     setShopDropdown(false);
+  //   } else {
+  //     setShopDropdown(false);
+  //   }
+  // };
+  // const onP1Enter = () => {
+  //   if (window.innerWidth < 980) {
+  //     setP1Dropdown(false);
+  //   } else {
+  //     setP1Dropdown(true);
+  //   }
+  // };
+  // const onP1Leave = () => {
+  //   if (window.innerWidth < 980) {
+  //     setP1Dropdown(false);
+  //   } else {
+  //     setP1Dropdown(false);
+  //   }
+  // };
+  // const onP2Enter = () => {
+  //   if (window.innerWidth < 980) {
+  //     setP2Dropdown(false);
+  //   } else {
+  //     setP2Dropdown(true);
+  //   }
+  // };
+  // const onP2Leave = () => {
+  //   if (window.innerWidth < 980) {
+  //     setP2Dropdown(false);
+  //   } else {
+  //     setP2Dropdown(false);
+  //   }
+  // };
+  // const onGEnter = () => {
+  //   if (window.innerWidth < 980) {
+  //     setGallryDropdown(false);
+  //   } else {
+  //     setGallryDropdown(true);
+  //   }
+  // };
+  // const onGLeave = () => {
+  //   if (window.innerWidth < 980) {
+  //     setGallryDropdown(false);
+  //   } else {
+  //     setGallryDropdown(false);
+  //   }
+  // };
+  // const onElementEnter = () => {
+  //   if (window.innerWidth < 980) {
+  //     setElements(false);
+  //   } else {
+  //     setElements(true);
+  //   }
+  // };
+  // const onElementLeave = () => {
+  //   if (window.innerWidth < 980) {
+  //     setElements(false);
+  //   } else {
+  //     setElements(false);
+  //   }
+  // };
 
   return (
     <>
