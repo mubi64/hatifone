@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "./styles.css";
 
 export default function Banner() {
   return (
@@ -16,15 +15,15 @@ export default function Banner() {
             position: "absolute",
           }}
           poster="/image/home-10-471x340.jpg"
-          className="video"
+          className="swiper-slide context-dark vide"
         >
           <source src="/video/hatifone_video.mp4" />
         </video>
         <div className="swiper-wrapper">
           <div
             className="swiper-slide context-dark vide"
-            // data-vide-bg="video/video-bg"
-            // data-vide-options="posterType: jpg"
+            data-vide-bg="video/hatifone_video"
+            data-vide-options="posterType: jpg"
           >
             <div className="swiper-slide-caption vide-inner">
               <div className="container">
