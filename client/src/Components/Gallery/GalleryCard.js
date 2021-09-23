@@ -1,13 +1,12 @@
 import { Suspense, lazy } from "react";
-// import { SRLWrapper } from "simple-react-lightbox";
-const SRLWrapperDiv = lazy(() => import("simple-react-lightbox"));
+import { SRLWrapper } from "simple-react-lightbox";
 
 const GalleryCard = ({ galleryData }) => {
   return (
     <>
       <Suspense fallback={<div>Loading ...</div>}>
         <section className="section">
-          <SRLWrapperDiv>
+          <SRLWrapper>
             <div
               className="row row-gutters-12 row-12 row-content"
               data-lightgallery="group"
@@ -50,7 +49,7 @@ const GalleryCard = ({ galleryData }) => {
                 </blockquote>
               </div>
             </div>
-          </SRLWrapperDiv>
+          </SRLWrapper>
         </section>
       </Suspense>
     </>
