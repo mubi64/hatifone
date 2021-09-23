@@ -1,8 +1,9 @@
 import React, { useRef, useState } from "react";
 import axios from "axios";
-import GoogleMap from "./GoogleMap";
+// import GoogleMap from "./GoogleMap";
 import ReCAPTCHA from "react-google-recaptcha";
 import AppConfig from "../../../../App.config";
+import { Link } from "react-router-dom";
 
 const ContactForm = () => {
   const Form = () => {
@@ -91,32 +92,34 @@ const ContactForm = () => {
                   </li>
                   <li className="list-item">
                     <div className="list-icon mdi mdi-map-marker"></div>
-                    <a className="link-dark" href="#">
+                    <span className="link-dark">
                       1/6-P, PECHS, Block 6, Laeeq Begum Road,
                       <br className="d-none d-xl-inline" />
                       Near Nursery Flyover, Shahra-e-Faisal,
                       <br className="d-none d-xl-inline" />
                       Karachi Pakistan
-                    </a>
+                    </span>
                   </li>
                 </ul>
                 <div className="social">
                   <a
-                    className="social-icon icon icon-md mdi mdi-facebook"
-                    href="#"
+                    className="icon mdi mdi-facebook"
+                    href="https://www.facebook.com/HatifOne"
+                    target="_blank"
+                    rel="noreferrer"
                   ></a>
-                  <a
+                  <Link
                     className="social-icon icon icon-md mdi mdi-twitter"
-                    href="#"
-                  ></a>
-                  <a
+                    to="/"
+                  ></Link>
+                  <Link
                     className="social-icon icon icon-md mdi mdi-instagram"
-                    href="#"
-                  ></a>
-                  <a
+                    to="/"
+                  ></Link>
+                  <Link
                     className="social-icon icon icon-md mdi mdi-youtube-play"
-                    href="#"
-                  ></a>
+                    to="/"
+                  ></Link>
                 </div>
               </div>
               <div className="col-md-6 col-xl-5 offset-custom">

@@ -15976,3 +15976,35 @@ body:not(.lg-from-hash)
 .gallery img:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
+
+.videosize {
+  position: absolute;
+  width: auto;
+  height: 100vh;
+}
+
+@media (min-width: 1155px) {
+  .videosize {
+    height: 120vh;
+  }
+}
+@media (min-width: 1322px) {
+  .videosize {
+    height: 140vh;
+  }
+}
+@media (min-width: 1527px) {
+  .videosize {
+    height: 160vh;
+  }
+}
+@media (min-width: 1763px) {
+  .videosize {
+    height: 220vh;
+  }
+}
+@media (min-width: 1750px) {
+  .videosize {
+    height: 220vh;
+  }
+}

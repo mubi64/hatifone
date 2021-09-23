@@ -11,11 +11,14 @@ export default function Banner() {
           muted
           autoPlay
           loop
-          style={{
-            position: "absolute",
-          }}
+          // style={{
+          //   position: "absolute",
+          //   width: "100vw",
+          //   height: "auto",
+          // }}
           poster="/image/home-10-471x340.jpg"
-          className="swiper-slide context-dark vide"
+          // className="swiper-slide context-dark vide"
+          className="videosize"
         >
           <source src="/video/hatifone_video.mp4" />
         </video>
