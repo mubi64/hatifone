@@ -1,10 +1,8 @@
-import { Suspense, lazy } from "react";
 import { SRLWrapper } from "simple-react-lightbox";
 
 const GalleryCard = ({ galleryData }) => {
   return (
     <>
-      <Suspense fallback={<div>Loading ...</div>}>
         <section className="section">
           <SRLWrapper>
             <div
@@ -51,7 +49,6 @@ const GalleryCard = ({ galleryData }) => {
             </div>
           </SRLWrapper>
         </section>
-      </Suspense>
     </>
   );
 };

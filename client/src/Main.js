@@ -18,7 +18,7 @@ const About = lazy(() => import("./Components/About"));
 const Clientspage = lazy(() => import("./Components/Clientspage"));
 
 // import ContactUs from "./Components/pages/page1/ContactUs";
-const ContactUs = lazy(() => import("./Components/pages/page1//ContactUs"));
+const ContactUs = lazy(() => import("./Components/pages/page1/ContactUs"));
 
 // import Footer from "./Components/Footer";
 const Footer = lazy(() => import("./Components/Footer"));
