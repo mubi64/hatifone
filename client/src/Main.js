@@ -1,11 +1,31 @@
-import { useState } from "react";
+import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./Components/Header";
-import Footer from "./Components/Footer";
-import About from "./Components/About";
-import Services from "./Components/Services";
+import ScrollToTop from "./Components/ScrollToTop";
+import Loader from "./Components/Loader/Loader";
 // import Pricing from "./Components/Pricing";
-import Home from "./Components/Home";
+
+// import Home from "./Components/Home";
+const Home = lazy(() => import("./Components/Home"));
+
+// import Services from "./Components/Services";
+const Services = lazy(() => import("./Components/Services"));
+
+// import About from "./Components/About";
+const About = lazy(() => import("./Components/About"));
+
+// import Clientspage from "./Components/Clientspage";
+const Clientspage = lazy(() => import("./Components/Clientspage"));
+
+// import ContactUs from "./Components/pages/page1/ContactUs";
+const ContactUs = lazy(() => import("./Components/pages/page1/ContactUs"));
+
+// import Footer from "./Components/Footer";
+const Footer = lazy(() => import("./Components/Footer"));
+
+// import NotFount from "./Components/404/NotFount";
+const NotFount = lazy(() => import("./Components/404/NotFount"));
+
 // import AbTeam from "./Components/About/AbTeam";
 // import TeamMember from "./Components/About/TeamMember";
 // import SingleServices from "./Components/Services/SingleServices";
@@ -19,12 +39,10 @@ import Home from "./Components/Home";
 // import List from "./Components/pages/Shop/List";
 // import SingleProductCom from "./Components/pages/Shop/SingleProduct/SingleProductCom";
 // import Crat from "./Components/Cart";
-import NotFount from "./Components/404/NotFount";
 // import Checkout from "./Components/pages/Shop/Checkout";
 // import Shoping from "./Components/pages/Shop/Shoping";
 // import Payment from "./Components/pages/Shop/Payment";
 // import Faqs from "./Components/pages/page1/Faqs";
-import ContactUs from "./Components/pages/page1/ContactUs";
 // import CommingSoon from "./Components/pages/Page2/CommingSoon";
 // import PrivacyPolicy from "./Components/pages/Page2/PrivacyPolicy";
 // import Search from "./Components/pages/Page2/Search";
@@ -33,119 +51,119 @@ import ContactUs from "./Components/pages/page1/ContactUs";
 // import MasonryGallery from "./Components/Gallery/MasonryGallery";
 // import CobblesGallery from "./Components/Gallery/CobblesGallery";
 
-// Top Loading Bar
-import LoadingBar from "react-top-loading-bar";
-import Clients from "./Components/Clientspage";
-import ScrollToTop from "./Components/ScrollToTop";
-
 function Main() {
-  const [progress, setProgress] = useState(0);
-
   return (
-    <div>
-      <Router>
-        <ScrollToTop />
-        <Header />
-        <LoadingBar color="#104a3a" progress={progress} />
-        <Switch>
-          <Route exact path="/">
-            <Home setProgress={setProgress} />
-          </Route>
-          <Route path="/about">
-            <About setProgress={setProgress} />
-          </Route>
-          {/* <Route path="/team">
-            <AbTeam setProgress={setProgress} />
+    <>
+      <Suspense
+        fallback={
+          <div>
+            <Loader />
+          </div>
+        }
+      >
+        <Router>
+          <ScrollToTop />
+          <Header />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/services">
+              <Services />
+            </Route>
+            <Route path="/contactus">
+              <ContactUs />
+            </Route>
+            <Route path="/clients">
+              <Clientspage />
+            </Route>
+            <Route path="*">
+              <NotFount />
+            </Route>
+            {/* <Route path="/team">
+            <AbTeam />
           </Route>
           <Route path="/teamMember">
-            <TeamMember setProgress={setProgress} />
+            <TeamMember />
           </Route> */}
-          <Route path="/services">
-            <Services setProgress={setProgress} />
-          </Route>
-          {/* <Route path="/singleServices">
-            <SingleServices setProgress={setProgress} />
+            {/* <Route path="/singleServices">
+            <SingleServices />
           </Route>
           <Route path="/pricing">
-            <Pricing setProgress={setProgress} />
+            <Pricing />
           </Route>
           <Route path="/gridNews">
-            <GridNews setProgress={setProgress} />
+            <GridNews />
           </Route>
           <Route path="/listNews">
-            <ListNews setProgress={setProgress} />
+            <ListNews />
           </Route>
           <Route path="/masonryNews">
-            <MasonryNews setProgress={setProgress} />
+            <MasonryNews />
           </Route>
           <Route path="/modernnews">
-            <ModernNews setProgress={setProgress} />
+            <ModernNews />
           </Route>
           <Route path="/singlepost">
-            <SinglePost setProgress={setProgress} />
+            <SinglePost />
           </Route>
           <Route path="/typography">
-            <Elements setProgress={setProgress} />
+            <Elements />
           </Route>
           <Route path="/gridshop">
-            <Shop setProgress={setProgress} />
+            <Shop />
           </Route>
           <Route path="/listshop">
-            <List setProgress={setProgress} />
+            <List />
           </Route>
           <Route path="/singleproduct">
-            <SingleProductCom setProgress={setProgress} />
+            <SingleProductCom />
           </Route>
           <Route path="/cart">
-            <Crat setProgress={setProgress} />
+            <Crat />
           </Route>
           <Route path="/checkout">
-            <Checkout setProgress={setProgress} />
+            <Checkout />
           </Route>
           <Route path="/shipping">
-            <Shoping setProgress={setProgress} />
+            <Shoping />
           </Route>
           <Route path="/payment">
-            <Payment setProgress={setProgress} />
+            <Payment />
           </Route>
           <Route path="/faqs">
-            <Faqs setProgress={setProgress} />
+            <Faqs />
           </Route>
          
           <Route path="/comingsoon">
-            <CommingSoon setProgress={setProgress} />
+            <CommingSoon />
           </Route>
           <Route path="/privacypolicy">
-            <PrivacyPolicy setProgress={setProgress} />
+            <PrivacyPolicy />
           </Route>
           <Route path="/searchresults">
-            <Search setProgress={setProgress} />
+            <Search />
           </Route>
           <Route path="/gridgallery1">
-            <GridGallery1 setProgress={setProgress} />
+            <GridGallery1 />
           </Route>
           <Route path="/gridgallery2">
-            <GridGallery2 setProgress={setProgress} />
+            <GridGallery2 />
           </Route>
           <Route path="/masonrygallery">
-            <MasonryGallery setProgress={setProgress} />
+            <MasonryGallery />
           </Route>
           <Route path="/cobblesgallery">
-            <CobblesGallery setProgress={setProgress} />
+            <CobblesGallery />
           </Route> */}
-          <Route path="/contactus">
-            <ContactUs setProgress={setProgress} />
-          </Route>
-          <Route path="/clients">
-            <Clients setProgress={setProgress} />
-          </Route>
-          <Route path="*">
-            <NotFount setProgress={setProgress} />
-          </Route>
-        </Switch>
-        <Footer />
-      </Router>
-    </div>
+          </Switch>
+          <Footer />
+        </Router>
+      </Suspense>
+    </>
   );
 }
 

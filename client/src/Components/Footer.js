@@ -54,21 +54,25 @@ const Footer = () => {
                     className="social-icon icon icon-md mdi mdi-facebook"
                     href="https://www.facebook.com/HatifOne"
                     target="_blank"
+                    rel="noreferrer"
                   ></a>
                   <a
                     className="social-icon icon icon-md mdi mdi-twitter"
                     href="https://www.facebook.com/HatifOne"
                     target="_blank"
+                    rel="noreferrer"
                   ></a>
                   <a
                     className="social-icon icon icon-md mdi mdi-instagram"
                     href="https://www.facebook.com/HatifOne"
                     target="_blank"
+                    rel="noreferrer"
                   ></a>
                   <a
                     className="social-icon icon icon-md mdi mdi-youtube-play"
                     href="https://www.facebook.com/HatifOne"
                     target="_blank"
+                    rel="noreferrer"
                   ></a>
                 </div>
               </div>

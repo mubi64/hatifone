@@ -34,7 +34,7 @@ const LatesNews = () => {
           />
         </div>
         <a className="link link-btn link-btn-1" href="news.html">
-          See All News{" "}
+          See All News
         </a>
       </div>
     </section>

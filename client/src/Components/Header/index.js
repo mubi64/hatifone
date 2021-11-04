@@ -441,13 +441,13 @@ function Header({ history }) {
                         <span className="icon mdi mdi-map-marker"></span>
                       </div>
                       <div className="unit-body">
-                        <a href="#">
-                          1/6-P, PECHS, Block 6, Laeeq Begum Road,
-                          <br className="d-none d-xl-inline" />
-                          Near Nursery Flyover, Shahra-e-Faisal,
-                          <br className="d-none d-xl-inline" />
-                          Karachi Pakistan
-                        </a>
+                        {/* <a href="#"> */}
+                        1/6-P, PECHS, Block 6, Laeeq Begum Road,
+                        <br className="d-none d-xl-inline" />
+                        Near Nursery Flyover, Shahra-e-Faisal,
+                        <br className="d-none d-xl-inline" />
+                        Karachi Pakistan
+                        {/* </a> */}
                       </div>
                     </div>
                   </li>
@@ -475,6 +475,7 @@ function Header({ history }) {
                       className="icon mdi mdi-facebook"
                       href="https://www.facebook.com/HatifOne"
                       target="_blank"
+                      rel="noopener noreferrer"
                     ></a>
                   </li>
                   <li>
@@ -482,6 +483,7 @@ function Header({ history }) {
                       className="icon mdi mdi-twitter"
                       href="https://www.facebook.com/HatifOne"
                       target="_blank"
+                      rel="noopener noreferrer"
                     ></a>
                   </li>
                   <li>
@@ -489,6 +491,7 @@ function Header({ history }) {
                       className="icon mdi mdi-instagram"
                       href="https://www.facebook.com/HatifOne"
                       target="_blank"
+                      rel="noopener noreferrer"
                     ></a>
                   </li>
                   <li>
@@ -496,6 +499,7 @@ function Header({ history }) {
                       className="icon mdi mdi-youtube-play"
                       href="https://www.facebook.com/HatifOne"
                       target="_blank"
+                      rel="noopener noreferrer"
                     ></a>
                   </li>
                 </ul>

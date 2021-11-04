@@ -4,12 +4,12 @@ import WeOffer from "./WeOffer";
 import WhoAre from "./WhoAre";
 import Gallery from "./Gallery";
 import ChooseUs from "./ChooseUs";
+import SignUp from "./SignUp";
 // import Package from "../Package";
 // import Team from "./Team";
-import SignUp from "./SignUp";
 // import LatesNews from "./LatesNews";
 
-const Home = (props) => {
+const Home = () => {
   useEffect(() => {
     document.title = "Home";
   }, []);
