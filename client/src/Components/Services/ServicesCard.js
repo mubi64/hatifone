@@ -16,7 +16,7 @@ const ServicesCard = (props) => {
           </div>
           <div className="thumbnail-body">
             <div className="thumbnail-title h4">{props.title}</div>
-            <div className="thumbnail-text">{props.pera}</div>
+            <div className="thumbnail-text" style={{ textAlign: "justify" }} >{props.pera}</div>
             <div className="thumbnail-price">{props.price}</div>
           </div>
         </div>

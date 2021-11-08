@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "./styles.css";
 
 export default function Banner() {
   return (
@@ -31,7 +30,7 @@ export default function Banner() {
                 <div className="row">
                   <div className="col-xl-6">
                     <h1
-                      className="text-divider"
+                      className="text-divider h1"
                       data-caption-animate="fadeInUp"
                     >
                       <span className="text-divider-item"></span>Modern Call

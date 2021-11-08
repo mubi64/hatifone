@@ -17,7 +17,7 @@ const OfferCard = (props) => {
           </p>
           <div className="row row-30 justify-content-center text-lg-start">
             <ServicesCard
-              img="images/hatifone_1.jpg"
+              img="images/image1.png"
               title="Software Solution"
               pera="HATIFONE will provide you its call center solution
               software with full traning and go live. You can run your
@@ -27,7 +27,7 @@ const OfferCard = (props) => {
               // price="Price up to $20."
             />
             <ServicesCard
-              img="images/hatifone_2.jpg"
+              img="images/image2.png"
               title="Software Solution + Agent"
               pera="HATIFONE will outsource your call center complelety where
               you do not need to hire your inhouse agents or setup call
@@ -37,7 +37,7 @@ const OfferCard = (props) => {
               // price="Price up to $20."
             />
             <ServicesCard
-              img="images/hatifone_3.jpg"
+              img="images/image3.png"
               title="Software Solution + CRM"
               pera="All functionalities of call center software solution + CRM where you can upload raw data of leads in CRM which is fully connected with call center software. Upon login, agent can see all the previous history of calls and sales for specific number, if done in past."
               // price="From $10."
