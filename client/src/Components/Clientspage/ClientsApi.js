@@ -22,7 +22,7 @@ const ClientsApi = () => {
       <PropsCom images="images/pizzac.jpg" styles="45px 44px" />
       <PropsCom images="images/pizzahut.png" styles="45px 35px" />
       <PropsCom images="images/max.png" styles="45px 44px" />
-      <PropsCom images="images/Lal.png" styles="68px ​20px" />
+      <PropsCom images="images/Lal.png" styles="70px 30px" />
       <PropsCom images="images/un.png" styles="52px 29px" />
       <PropsCom images="images/sab.png" styles="41px 10px" />
       <PropsCom images="images/pizzamax.png" styles="73px 42px" />
