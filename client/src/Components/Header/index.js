@@ -359,7 +359,8 @@ function Header({ history }) {
                       <div className="contacts-default-text">Contact us</div>
                       <a
                         href="https://wa.me/923212897837"
-                        _target="blank"
+                        target="_blank"
+                        rel="noreferrer"
                         style={{ color: "#367B00" }}
                       >
                         <span class="iconify" data-icon="mdi:whatsapp"></span>{" "}
@@ -402,7 +403,8 @@ function Header({ history }) {
                       <div className="unit-body">
                         <a
                           href="https://wa.me/923212897837"
-                          _target="blank"
+                          target="_blank"
+                          rel="noreferrer"
                           style={{ color: "#367B00" }}
                         >
                           +92 321 289 7837

@@ -193,7 +193,11 @@ const MbHeader = () => {
                       <div className="contacts-default-text">
                         Call Us for any question
                       </div>
-                      <a href="https://wa.me/923212897837" _target="blank">
+                      <a
+                        href="https://wa.me/923212897837"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <span class="iconify" data-icon="mdi:whatsapp"></span>
                         +92 321 289 7837
                       </a>
@@ -232,7 +236,11 @@ const MbHeader = () => {
                         <span className="icon mdi mdi-phone"></span>
                       </div>
                       <div className="unit-body">
-                        <a href="https://wa.me/923212897837" _target="blank">
+                        <a
+                          href="https://wa.me/923212897837"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <span class="iconify" data-icon="mdi:whatsapp"></span>{" "}
                           +92 321 289 7837
                         </a>
