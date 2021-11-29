@@ -252,6 +252,24 @@ function Header({ history }) {
                         Home
                       </Link>
                     </li>
+                    <li
+                      onMouseEnter={onMouseEnter}
+                      onMouseLeave={onMouseLeave}
+                      className={`rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu ${
+                        dropdown ? "focus" : ""
+                      } `}
+                    >
+                      <Link
+                        className="rd-nav-link"
+                        style={{
+                          color: getColor("/about"),
+                          textDecoration: gettrasition("/about"),
+                        }}
+                        to="/about"
+                      >
+                        About
+                      </Link>
+                    </li>
 
                     <li
                       onMouseEnter={onHoverEnter}
@@ -298,51 +316,7 @@ function Header({ history }) {
                         Clients
                       </Link>
                     </li>
-                    <li
-                      onMouseEnter={onMouseEnter}
-                      onMouseLeave={onMouseLeave}
-                      className={`rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu ${
-                        dropdown ? "focus" : ""
-                      } `}
-                    >
-                      <Link
-                        className="rd-nav-link"
-                        style={{
-                          color: getColor("/about"),
-                          textDecoration: gettrasition("/about"),
-                        }}
-                        to="/about"
-                      >
-                        About
-                      </Link>
-                      {/* <span className="rd-navbar-submenu-toggle"></span>
-                      <ul className="rd-menu rd-navbar-dropdown">
-                        <li className="rd-dropdown-item">
-                          <Link
-                            className="rd-dropdown-link"
-                            style={{
-                              color: getColor("/team"),
-                              textDecoration: gettrasition("/team"),
-                            }}
-                            to="/team"
-                          >
-                            Team
-                          </Link>
-                        </li>
-                        <li className="rd-dropdown-item">
-                          <Link
-                            className="rd-dropdown-link"
-                            style={{
-                              color: getColor("/teamMember"),
-                              textDecoration: gettrasition("/teamMember"),
-                            }}
-                            to="/teamMember"
-                          >
-                            Team member
-                          </Link>
-                        </li>
-                      </ul> */}
-                    </li>
+
                     <li className="rd-nav-item">
                       <Link
                         className="rd-nav-link"
@@ -382,10 +356,15 @@ function Header({ history }) {
                   </div> */}
                   <div>
                     <div className="contacts-default">
-                      <div className="contacts-default-text">
-                        Call Us for any question
-                      </div>
-                      <a href="tel:+92 (301) 183 2653" style={{color: "#367B00"}} >+92 (301) 183 2653</a>
+                      <div className="contacts-default-text">Contact us</div>
+                      <a
+                        href="https://wa.me/923212897837"
+                        _target="blank"
+                        style={{ color: "#367B00" }}
+                      >
+                        <span class="iconify" data-icon="mdi:whatsapp"></span>{" "}
+                        +92 321 289 7837
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -418,10 +397,16 @@ function Header({ history }) {
                   <li>
                     <div className="unit unit-spacing-md">
                       <div className="unit-left">
-                        <span className="icon mdi mdi-phone"></span>
+                        <span class="iconify" data-icon="mdi:whatsapp"></span>
                       </div>
                       <div className="unit-body">
-                        <a href="tel:+92 (301) 183 2653" style={{color: "#367B00"}} >+92 (301) 183 2653</a>
+                        <a
+                          href="https://wa.me/923212897837"
+                          _target="blank"
+                          style={{ color: "#367B00" }}
+                        >
+                          +92 321 289 7837
+                        </a>
                       </div>
                     </div>
                   </li>
@@ -496,8 +481,8 @@ function Header({ history }) {
                   </li>
                   <li>
                     <a
-                      className="icon mdi mdi-youtube-play"
-                      href="https://www.facebook.com/HatifOne"
+                      className="icon mdi mdi-linkedin"
+                      href="https://www.linkedin.com/company/hatifone/"
                       target="_blank"
                       rel="noopener noreferrer"
                     ></a>

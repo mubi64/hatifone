@@ -193,7 +193,10 @@ const MbHeader = () => {
                       <div className="contacts-default-text">
                         Call Us for any question
                       </div>
-                      <a href="tel:#">+1 (800) 123 1234</a>
+                      <a href="https://wa.me/923212897837" _target="blank">
+                        <span class="iconify" data-icon="mdi:whatsapp"></span>
+                        +92 321 289 7837
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -229,7 +232,10 @@ const MbHeader = () => {
                         <span className="icon mdi mdi-phone"></span>
                       </div>
                       <div className="unit-body">
-                        <a href="tel:#">+1 800 123 1234</a>
+                        <a href="https://wa.me/923212897837" _target="blank">
+                          <span class="iconify" data-icon="mdi:whatsapp"></span>{" "}
+                          +92 321 289 7837
+                        </a>
                       </div>
                     </div>
                   </li>
@@ -275,7 +281,10 @@ const MbHeader = () => {
               <div className="sidebar-panel">
                 <ul className="list-social">
                   <li>
-                    <Link className="icon mdi mdi-facebook" to="/"></Link>
+                    <a
+                      className="icon mdi mdi-facebook"
+                      href="https://www.facebook.com/HatifOne"
+                    ></a>
                   </li>
                   <li>
                     <Link className="icon mdi mdi-twitter" to="/"></Link>
@@ -284,84 +293,14 @@ const MbHeader = () => {
                     <Link className="icon mdi mdi-instagram" to="/"></Link>
                   </li>
                   <li>
-                    <Link className="icon mdi mdi-youtube-play" to="/"></Link>
+                    <a
+                      className="icon mdi mdi-linkedin"
+                      href="https://www.linkedin.com/company/hatifone/"
+                    ></a>
                   </li>
                 </ul>
               </div>
             </div>
-            {/* <div
-              onClick={() => setToggle(!toggle)}
-              className={`sidebar-wrap sidebar-wrap-2 ${
-                toggle ? "active" : ""
-              }`}
-             >
-              <button
-                className={`sidebar-close ${toggle ? "active" : ""}`}
-                data-multitoggle=".sidebar-wrap-2"
-                data-multitoggle-blur=".rd-navbar-wrap"
-                data-multitoggle-isolate=""
-              >
-                <span></span>
-              </button>
-              <div className="sidebar">
-                <h3 className="sidebar-title">My Cart</h3>
-                <div className="product product-small navbar-product">
-                  <div className="product-media">
-                    <img
-                      className="product-img"
-                      src="images/header-02-100x100.jpg"
-                      alt=""
-                      width="100"
-                      height="100"
-                    />
-                  </div>
-                  <div className="product-body">
-                    <div className="product-title">
-                      <a className="link-dark" href="single-product.html">
-                        FixIT Laptop CPU Cooling Fan Replacement
-                      </a>
-                    </div>
-                    <div className="product-price h6 text-primary">$12.00</div>
-                  </div>
-                  <button className="product-remove icon linearicons-trash"></button>
-                </div>
-                <div className="product product-small navbar-product">
-                  <div className="product-media">
-                    <img
-                      className="product-img"
-                      src="images/header-03-100x100.jpg"
-                      alt=""
-                      width="100"
-                      height="100"
-                    />
-                  </div>
-                  <div className="product-body">
-                    <div className="product-title">
-                      <a className="link-dark" href="single-product.html">
-                        InVision SB220Q bi 21.5 Inches Full HD IPS Ultra-Thin
-                        Monitor
-                      </a>
-                    </div>
-                    <div className="product-price h6 text-primary">$12.00</div>
-                  </div>
-                  <button className="product-remove icon linearicons-trash"></button>
-                </div>
-              </div>
-              <div className="sidebar-footer">
-                <div className="sidebar-footer-price">
-                  <span>Subtotal: </span>
-                  <span className="text-primary fw-bold">$24.00</span>
-                </div>
-                <div className="sidebar-footer-btns">
-                  <a className="btn btn-primary btn-block" href="checkout.html">
-                    Checkout
-                  </a>
-                  <a className="btn btn-secondary btn-block" href="cart.html">
-                    View Cart
-                  </a>
-                </div>
-              </div>
-            </div> */}
           </nav>
         </div>
       </header>

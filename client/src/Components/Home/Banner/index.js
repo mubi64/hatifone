@@ -40,6 +40,7 @@ export default function Banner() {
                       className="big"
                       data-caption-animate="fadeInUp"
                       data-caption-delay="250"
+                      style={{ color: "#fff" }}
                     >
                       A asterisk based "Digital PBX Solution" which comes with
                       software or software+agent, both.

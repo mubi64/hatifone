@@ -4,7 +4,10 @@ import ServicesCard from "../Services/ServicesCard";
 const OfferCard = (props) => {
   return (
     <>
-      <section className="pcSection section section-lg bg-transparent text-center">
+      <section
+        className="pcSection section section-lg bg-transparent text-center"
+        id="serv"
+      >
         <div className="container">
           <h2 className="text-divider">
             <span className="text-divider-item"></span>What we Offer

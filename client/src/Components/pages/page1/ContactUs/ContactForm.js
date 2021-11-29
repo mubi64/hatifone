@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import axios from "axios";
-import GoogleMap from "./GoogleMap";
+// import GoogleMap from "./GoogleMap";
 import ReCAPTCHA from "react-google-recaptcha";
 import AppConfig from "../../../../App.config";
 
@@ -64,7 +64,7 @@ const ContactForm = () => {
           <div className="container">
             <div className="row row-40 justify-content-xl-between">
               <div className="col-md-6">
-                <h1 className="text-divider">
+                <h1 className="text-divider" style={{ fontSize: "25px" }}>
                   <span className="text-divider-item"></span>Have Any Questions?
                 </h1>
                 <p>
@@ -77,26 +77,67 @@ const ContactForm = () => {
                   </span>
                 </p>
                 <ul className="list-icons">
-                  <li className="list-item">
+                  {/* <li className="list-item">
                     <div className="list-icon mdi mdi-phone"></div>
                     <a className="link-dark" href="tel:+92 (301) 183 2653">
                       +92 (301) 183 2653
                     </a>
-                  </li>
-                  <li className="list-item">
+                  </li> */}
+                  {/* <li className="list-item">
                     <div className="list-icon mdi mdi-email-outline"></div>
                     <a className="link" href="mailto:info@hatifone.com">
                       <u>info@hatifone.com</u>
+                    </a>
+                  </li> */}
+                  <li className="list-item">
+                    <div className="list-icon mdi mdi-map-marker"></div>
+                    <a className="link-dark" href="#">
+                      {/* 1/6-P, PECHS, Block 6, Laeeq Begum Road,
+                      <br className="d-none d-xl-inline" />
+                      Near Nursery Flyover, Shahra-e-Faisal,
+                      <br className="d-none d-xl-inline" />
+                      Karachi Pakistan */}
+                      Karachi, Pakistan
+                      <br /> 1/6-P, PECHS, Block 6, Shahra-e-Faisal, Karachi
+                      Pakistan
                     </a>
                   </li>
                   <li className="list-item">
                     <div className="list-icon mdi mdi-map-marker"></div>
                     <a className="link-dark" href="#">
-                      1/6-P, PECHS, Block 6, Laeeq Begum Road,
+                      {/* 1/6-P, PECHS, Block 6, Laeeq Begum Road,
                       <br className="d-none d-xl-inline" />
                       Near Nursery Flyover, Shahra-e-Faisal,
                       <br className="d-none d-xl-inline" />
-                      Karachi Pakistan
+                      Karachi Pakistan */}
+                      Riyadh, KSA
+                      <br /> Al Mousa Office Buildings, Tower # 4, Floor # 2,
+                      Office No. 425 Riyadh, KSA
+                    </a>
+                  </li>
+                  <li className="list-item">
+                    <div className="list-icon mdi mdi-map-marker"></div>
+                    <a className="link-dark" href="#">
+                      {/* 1/6-P, PECHS, Block 6, Laeeq Begum Road,
+                      <br className="d-none d-xl-inline" />
+                      Near Nursery Flyover, Shahra-e-Faisal,
+                      <br className="d-none d-xl-inline" />
+                      Karachi Pakistan */}
+                      Dubai, UAE
+                      <br /> The Iridium Building, Suite # 17, Umm Suqeim Road,
+                      Al Barsha P.O Box 391186 Dubai, UAE
+                    </a>
+                  </li>
+                  <li className="list-item">
+                    <div className="list-icon mdi mdi-map-marker"></div>
+                    <a className="link-dark" href="#">
+                      {/* 1/6-P, PECHS, Block 6, Laeeq Begum Road,
+                      <br className="d-none d-xl-inline" />
+                      Near Nursery Flyover, Shahra-e-Faisal,
+                      <br className="d-none d-xl-inline" />
+                      Karachi Pakistan */}{" "}
+                      England, UK
+                      <br /> 146 Sneinton Dale Nottingham, England NG2 4HJ
                     </a>
                   </li>
                 </ul>

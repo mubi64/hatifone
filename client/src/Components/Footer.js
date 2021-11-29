@@ -25,8 +25,15 @@ const Footer = () => {
                 />
                 <span className="brand-slogan">Call Center Solution</span>
               </Link>
-              <div className="xsmall">A brand by Sowaan Private Limited</div>
-              <hr />
+              <div className="xsmall">
+                <a
+                  className="link link-btn link-btn-1"
+                  href="https://sowaan.com"
+                  target="_blank"
+                >
+                  A brand by Sowaan Private Limited
+                </a>
+              </div>
               <div className="contact-info">
                 <div className="contact-info-item">
                   <div className="xsmall">Call Us for any question:</div>
@@ -66,8 +73,8 @@ const Footer = () => {
                     target="_blank"
                   ></a>
                   <a
-                    className="social-icon icon icon-md mdi mdi-youtube-play"
-                    href="https://www.facebook.com/HatifOne"
+                    className="social-icon icon icon-md mdi mdi-linkedin"
+                    href="https://www.linkedin.com/company/hatifone/"
                     target="_blank"
                   ></a>
                 </div>
@@ -75,7 +82,7 @@ const Footer = () => {
             </div>
             <div className="col-md-7 col-xl-6">
               <h3>Subscribe to Newsletter</h3>
-              <p>
+              <p style={{ color: "white" }}>
                 Sign up for our e-mail and be the first to know about our
                 special offers!
               </p>
@@ -105,20 +112,17 @@ const Footer = () => {
                   </button>
                 </div>
               </form>
-              {/* <div className="row row-12">
+              <div className="row row-12">
                 <div className="col-xs-3 col-sm-4">
                   <ul className="list">
                     <li>
                       <Link to="/about">Who We Are</Link>
                     </li>
                     <li>
-                      <Link to="/services">Services</Link>
+                      <a href="#serv">Services</a>
                     </li>
                     <li>
-                      <Link to="/pricing">Pricing</Link>
-                    </li>
-                    <li>
-                      <a href="#">News</a>
+                      <Link to="/clients">Clients</Link>
                     </li>
                     <li>
                       <Link to="/contactus">Contacts</Link>
@@ -128,29 +132,24 @@ const Footer = () => {
                 <div className="col-xs-9 col-sm-8">
                   <ul className="list">
                     <li>
-                      <Link to="/singleServices">
-                        Laptop Repair / Computer Repair
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/singleServices">
+                      <Link to="/services">
                         Cleaning Laptops / Replacing Thermal Paste
                       </Link>
                     </li>
                     <li>
-                      <Link to="/singleServices">Data Recovery</Link>
+                      <Link to="/services">Data Recovery</Link>
                     </li>
                     <li>
-                      <Link to="/singleServices">OS Installation</Link>
+                      <Link to="/services">OS Installation</Link>
                     </li>
                     <li>
-                      <Link to="/singleServices">
+                      <Link to="/services">
                         Assembling a Personal Computer at Home
                       </Link>
                     </li>
                   </ul>
                 </div>
-              </div> */}
+              </div>
             </div>
             <div className="col-12">
               <p className="rights text-caption">
