@@ -137,12 +137,12 @@ const Footer = () => {
                   <ul className="list">
                     <li>
                       <Link to="/about">
-                        We are Call Center Software Solution provider company
+                        We are Call Center Software Solution provider.
                       </Link>
                     </li>
                     <li>
                       <Link to="/services">
-                        We provide software solution, software+agent or
+                        software, software+agent or
                         software+agent+CRM.
                       </Link>
                     </li>
@@ -153,7 +153,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link to="/contactus">
-                        Pakistan - Saudi Arabia - Dubai - UK
+                        Pakistan - Saudi Arabia - UAE - UK
                       </Link>
                     </li>
                   </ul>
