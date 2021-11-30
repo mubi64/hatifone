@@ -132,19 +132,24 @@ const Footer = () => {
                 <div className="col-xs-9 col-sm-8">
                   <ul className="list">
                     <li>
-                      <Link to="/services">
-                        Cleaning Laptops / Replacing Thermal Paste
+                      <Link to="/about">
+                        We are Call Center Software Solution provider company
                       </Link>
                     </li>
                     <li>
-                      <Link to="/services">Data Recovery</Link>
-                    </li>
-                    <li>
-                      <Link to="/services">OS Installation</Link>
-                    </li>
-                    <li>
                       <Link to="/services">
-                        Assembling a Personal Computer at Home
+                        We provide software solution, software+agent or
+                        software+agent+CRM.
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/clients">
+                        Please visit the link to see our clients
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/contactus">
+                        Pakistan - Saudi Arabia - Dubai - UK
                       </Link>
                     </li>
                   </ul>
@@ -158,7 +163,7 @@ const Footer = () => {
                 <span>&nbsp;</span>
                 <span>Hatifone</span>
                 <span>.&nbsp;</span>
-                <Link to="/privacypolicy">Privacy Policy</Link>
+                <Link to="/">Privacy Policy</Link>
               </p>
             </div>
           </div>

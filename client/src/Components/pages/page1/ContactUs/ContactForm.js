@@ -58,6 +58,7 @@ const ContactForm = () => {
       setCompany("");
       setSubject("");
     };
+
     return (
       <>
         <section className="section section-lg bg-transparent">
