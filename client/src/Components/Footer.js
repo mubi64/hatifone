@@ -119,11 +119,11 @@ const Footer = () => {
                       <Link to="/about">Who We Are</Link>
                     </li>
                     <br />
-                    <br />
                     <li>
-                      <Link to="/services">Services</Link>
+                      <Link to="/services" style={{ marginBottom: "14px" }}>
+                        Services
+                      </Link>
                     </li>
-                    <br />
                     <br />
                     <li>
                       <Link to="/clients">Clients</Link>
