@@ -118,13 +118,9 @@ const Footer = () => {
                     <li>
                       <Link to="/about">Who We Are</Link>
                     </li>
-                    <br />
                     <li>
-                      <Link to="/services" style={{ marginBottom: "14px" }}>
-                        Services
-                      </Link>
+                      <Link to="/services">Services</Link>
                     </li>
-                    <br />
                     <li>
                       <Link to="/clients">Clients</Link>
                     </li>
@@ -142,8 +138,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link to="/services">
-                        software, software+agent or
-                        software+agent+CRM.
+                        software, software+agent or software+agent+CRM.
                       </Link>
                     </li>
                     <li>

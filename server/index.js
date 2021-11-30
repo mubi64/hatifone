@@ -1,3 +1,4 @@
+const path = require("path");
 const creds = require("./nodemon.json");
 const axios = require("axios");
 
@@ -6,7 +7,6 @@ let app = express();
 let nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
 
-const path = require("path");
 const router = express.Router();
 
 // Static folder
@@ -35,8 +35,12 @@ app.post("/mail", (req, res, next) => {
   var name = req.body.name;
   var company = req.body.company;
 
-  const mailList = ["mubashir@sowaan.com","usman@sowaan.com","salman@sowaan.com"];
-  let fromAddress = name+" <support@sowaan.com>";
+  const mailList = [
+    "mubashir@sowaan.com",
+    "usman@sowaan.com",
+    "salman@sowaan.com",
+  ];
+  let fromAddress = name + " <support@sowaan.com>";
 
   const mailOptions = {
     from: fromAddress,
@@ -75,8 +79,12 @@ app.post("/api", (req, res, next) => {
   var phone = req.body.phone;
   var name = req.body.name;
 
-  const mailList = ["mubashir@sowaan.com","usman@sowaan.com","salman@sowaan.com"]
-  let fromAddress = name+" <support@sowaan.com>";
+  const mailList = [
+    "mubashir@sowaan.com",
+    "usman@sowaan.com",
+    "salman@sowaan.com",
+  ];
+  let fromAddress = name + " <support@sowaan.com>";
 
   const mailOptions = {
     from: fromAddress,
