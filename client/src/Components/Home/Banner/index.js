@@ -28,7 +28,7 @@ export default function Banner() {
             <div className="swiper-slide-caption vide-inner">
               <div className="container">
                 <div className="row">
-                  <div className="col-xl-6">
+                  <div className="col-xl-6" style={{width: "58%"}} >
                     <h1
                       className="text-divider h1"
                       data-caption-animate="fadeInUp"
