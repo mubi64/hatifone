@@ -11170,7 +11170,7 @@ button.swiper-pagination-bullet {
 
 @media (min-width: 768px) {
   .swiper-slider-1 .swiper-slide-caption {
-    padding: 100px 0 140px;
+    padding: 10px 0 0;
   }
 }
 
